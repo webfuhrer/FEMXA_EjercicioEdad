@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<script>
+function porteroDiscoteca()
+{
+var edad=26;
+var respuesta_portero=fabricaIndicacion(edad);
+alert(respuesta_portero);
+}
+function fabricaIndicacion(x)
+{
+var texto="";
+	if(x>=18)
+	{
+	texto="Puedes pasar";
+	}
+	else
+	{
+	texto="No puedes pasar";
+	}
+	return texto;
+}
+</script>
+</head>
+<body>
+
+<button onclick="porteroDiscoteca();">Verificar edad</button>
+</body>
+</html>
